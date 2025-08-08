@@ -66,6 +66,7 @@ body {
     max-width: 1200px;
     padding-top: 56.25%;
     margin-top: 12px;
+    overflow: hidden;
 }
 
 .game-video iframe {
@@ -76,6 +77,34 @@ body {
     height: 80%;
     border: none;
     border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffca2c;
+    /* Changed to yellow for visibility */
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    color: #1a2a44;
+    /* Dark text for contrast */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Added shadow for prominence */
+}
+
+.play-button i {
+    margin-left: 5px;
+    /* Adjust icon position */
 }
 
 .game-description {
