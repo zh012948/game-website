@@ -69,6 +69,21 @@ body {
     overflow: hidden;
 }
 
+.game-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black */
+    backdrop-filter: blur(5px);
+    /* Blur effect */
+    z-index: 0;
+    /* Behind the play button and iframe */
+}
+
 .game-video iframe {
     position: absolute;
     top: 0;
@@ -85,26 +100,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #ffca2c;
-    /* Changed to yellow for visibility */
     border: none;
     border-radius: 50%;
     width: 80px;
     height: 80px;
     font-size: 40px;
     color: #1a2a44;
-    /* Dark text for contrast */
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    /* Added shadow for prominence */
 }
 
 .play-button i {
     margin-left: 5px;
-    /* Adjust icon position */
 }
 
 .game-description {
