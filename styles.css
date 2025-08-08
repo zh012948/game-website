@@ -1,3 +1,7 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,7 +19,7 @@ body {
     text-align: center;
     padding: 5px 0;
     font-size: 12px;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 1000;
 }
@@ -381,5 +385,17 @@ body {
 
     .age-content {
         width: 95%;
+    }
+
+
+    .game-description {
+
+        transform: translateY(0px);
+        margin-top: 4px;
+        font-size: 14px;
+    }
+
+    .disclaimer-bar {
+        font-size: 11px;
     }
 }
