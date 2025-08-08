@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const under18 = document.getElementById('under-18');
     const playButton = document.querySelector('.play-button');
     const iframe = document.querySelector('.game-video iframe');
+    const sidebarButtons = document.querySelectorAll('.sidebar button');
 
     // Show age verification modal on page load
     ageVerification.style.display = 'flex';
@@ -27,6 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
         cookieConsent.style.display = 'none';
     });
 
+    // Handle sidebar button clicks to switch games
+    sidebarButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const gameSrc = button.getAttribute('data-game');
+            if (gameSrc) {
+                iframe.setAttribute('data-src', gameSrc); // Update data-src
+                iframe.src = ''; // Reset src to stop current game
+                iframe.style.visibility = 'hidden'; // Hide iframe
+                playButton.style.display = 'block'; // Show play button
+            }
+        });
+    });
+
+    // Handle play button click to start the game
     playButton.addEventListener('click', () => {
         const gameSrc = iframe.getAttribute('data-src');
         if (gameSrc) {
