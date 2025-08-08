@@ -126,56 +126,6 @@ body {
     margin-top: 20px;
 }
 
-.stat-box {
-    width: 200px;
-    height: 200px;
-    background-color: #2a3a4a;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.stats-list {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.stat-item {
-    height: 60px;
-    background-color: #2a3a4a;
-    border-radius: 5px;
-    margin: 10px 0;
-}
-
-.game-options {
-    display: flex;
-    width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
-}
-
-.option-box {
-    width: 200px;
-    height: 200px;
-    background-color: #2a3a4a;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.options-list {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.option-item {
-    height: 60px;
-    background-color: #2a3a4a;
-    border-radius: 5px;
-    margin: 10px 0;
-}
 
 .footer {
     background-color: #0f1a2a;
