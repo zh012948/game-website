@@ -161,14 +161,12 @@ body {
 
 .footer-logos {
     margin: 10px 0;
-    display: flex;
-    justify-content: center;
 }
 
-.footer-logos i {
-    font-size: 30px;
+.footer-logo {
+    width: 50px;
     margin: 0 10px;
-    color: #d3d3d3;
+    vertical-align: middle;
 }
 
 .age-restriction {
